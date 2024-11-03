@@ -1,0 +1,223 @@
+
+
+.imagesmall{
+    object-fit: cover;
+    background-size: cover;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+// .horizantelImage{
+//     border-radius: 20px;
+
+// }
+.imagehorizantel{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.colorSelect{
+    padding: 16px;
+    border-radius: 100px;
+    margin-bottom:0;
+    
+}
+.SelectSize{
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #e9ecef;
+    font-size: 14px;
+    border: none;
+transition: all 1s;
+}
+.SelectSize:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .verticalimage{
+        width: 100%;
+    }
+    .imagesmall{
+        width: 170px;
+       
+    } 
+    .horizantelImage {
+        width: 100%;
+        height: 350px;
+        border-radius: 20px;
+        justify-content: space-around;
+        
+    }
+    .productData{
+        width: 100%;
+    }
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .verticalimage{
+        width: 100%;
+    }
+    .imagesmall{
+        width: 210px;
+       height: 140px;
+    } 
+    
+    .horizantelImage {
+        width: 100%;
+        height: 350px;
+       
+    }
+    .productData{
+        width: 100%;
+    }
+
+
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .imagesmall{
+        width: 190px;
+       height: 130px;
+    } 
+    .productData{
+        width: 460px;
+    }
+    .horizantelImage {
+        width: 330px;
+        height: 410px;
+   
+    }
+    
+    .imagehorizantel {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-size: cover;
+    }
+    
+    .productData{
+        width: 400px;
+    }
+
+
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1800px){
+    .imagesmall{
+        width: 210px;
+       height: 140px;
+    } 
+    .productData{
+        width: 460px;
+    }
+
+    .horizantelImage {
+        width: 400px;
+        height: 435px;
+        
+    }  
+
+
+}
+
+// ************SelectColor*****************
+.colorSelect {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.colorSelect.active::after {
+    content: '✔';
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+// ****************Select Size *********************
+.colorOption, .sizeOption {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    margin-right: 10px;
+}
+
+.colorOption {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.sizeOption {
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.colorOption.active, .sizeOption.active {
+    border: 2px solid black;
+    background-color: #000;
+    color: #fff;
+}
+
+
+// ********************Order Page*******************
+
+
+.CartMainBox{
+
+    width: 100%;
+    max-width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .CartMainBox{
+
+        max-width: 50%
+    }
+  }
+
+
+
+  .AmountBox{
+    width: 100%;
+    max-width: 100%;
+  }
+  @media only screen and (min-width: 768px) {
+    .AmountBox{
+
+        max-width: 40%
+    }
+  }
+
+
+
+  .subTotal{
+    display: flex;
+    justify-content: space-between;
+  }
